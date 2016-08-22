@@ -1,23 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
-<h1><a href="">Django Blog</a></h1>
-  <div>
+{% extends 'blog/base.html' %}
+{% block content %}
     {% for post in posts %}
-        <div>
-        <p>published:{{ post.created_date }}</p>
-            <a href="">{{ post.title }}</a>
-        <p>{{ post.text|linebreaksbr }}</p>
+        <div class="post-content">
+
+            <a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a>
+        <p class="text">{{ post.text|linebreaksbr }}</p>
+         <p class="date">published:{{ post.created_date }} </p><span class="author">author:{{ post.author }}</span>
         </div>
+        <hr>
       {% endfor %}
 
-        </div>
-
-
-
-</body>
-</html>
+     {% endblock %}

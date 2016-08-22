@@ -1,0 +1,48 @@
+a{
+    color: #FCA205;
+    font-family:"Lobster";
+}
+
+div a{
+    font-size:24px;
+}
+
+body{
+    padding-left: 25px;
+    margin: 0 auto;
+}
+.page-header {
+    background-color: #ff9400;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+    text-align: center;
+}
+.page-header a{
+        font-size: 100px;
+        text-decoration: none;
+    color: white;   
+
+}
+.post-content{
+    width: 100%;
+}
+.post-content a{
+    font-size: 50px;
+}
+.text{
+    font-weight: 500;
+    font-size: 20px;
+}
+.date{
+    text-decoration: underline;
+    line-height: 15px;
+    font-size: 18px;
+    color: #2e4374;
+    font-weight: 600;
+}
+hr{
+    border: 2px solid #ff9400 ;
+}
+.author{
+    text-decoration: none;
+}
